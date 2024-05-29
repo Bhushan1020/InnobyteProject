@@ -3,34 +3,56 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-  }
-  
-  .home-container {
+}
+
+.home-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
-    background-image: url('../images/ayodhya.webp'); /* Path to your background image */
+    height: 100vh; 
+    background-image: url('../images/new.jpg'); 
     background-size: cover;
     background-position: center;
-  }
-  
-  .center-block {
+}
+
+.center-block {
     width: 900px;
     padding: 20px 40px;
     border-radius: 10px;
     text-align: center;
-  }
-  
-  .center-block h1 {
+    opacity: 0;
+    transform: translateY(60px);
+    animation: fadeInUp 2s ease-out forwards;
+    -webkit-animation: fadeInUp 2s ease-out forwards;
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+}
+
+.center-block h1 {
     color: white;
     margin: 0 0 10px;
     font-size: 2.9em;
-  }
-  
-  .center-block p {
+}
+
+.center-block p {
     margin: 0;
     font-size: 1.2em;
     color: #666;
-  }
-  
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+        -webkit-transform: translateY(80px);
+        -moz-transform: translateY(80px);
+        -ms-transform: translateY(80px);
+        -o-transform: translateY(80px);
+}
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

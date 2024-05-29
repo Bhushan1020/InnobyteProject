@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  
+  }
+  .contact-form{
+    padding:30px;
+  }
+  
+  .outer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18444D;
+  }
+  
+  .contact-us-container {
+    background-color: #0E4F52;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contact-form-block,
+  .contact-info-block {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 100px;
+    margin-right: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #0F363E;
+    height: 100%;
+    width: 500px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.contact-info-block {
+    height: 450px;
+    padding: 30px;
+}
+
+  .contact-form-block h2,
+  .contact-info-block h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  .name{
+    padding-top: 15px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 4px solid #ccc;
+    border-radius: 45px;
+    outline: none;
+    transition: border-color 0.3s;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+  
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: #e21262;
+  }
+  
+  .form-group input::placeholder, .form-group textarea::placeholder {
+    color: #433f3f;
+    font-size: 18px;
+  }
+  
+  .bt {
+    padding: 15px;
+    font-size: 18px;
+    background: #e21262;
+    border: none;
+    border-radius: 25px;
+    width:40%;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+  
+  .bt:hover {
+    background: #8d0034;
+    transform: scale(1.05);
+  }
+  
+  .contact-info-block p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .contact-info-block p strong {
+    color: #e21262;
+  }
+
+  @media (max-width: 768px) {
+    .contact-us-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contact-form-block, .contact-info-block {
+      margin-bottom: 20px;
+    }
+  }
+  

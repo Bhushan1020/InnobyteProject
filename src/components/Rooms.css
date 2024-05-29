@@ -1,0 +1,124 @@
+.rooms-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f0f0f0;
+}
+
+.room-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.room-card:hover {
+    transform: scale(1.05);
+}
+
+.room-image {
+    width: 100%;
+    height: auto;
+}
+
+.room-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.room-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.room-info p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.room-rate h3 {
+    margin-bottom: 20px;
+    color: #e21262;
+}
+
+.book-now-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e21262;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+    background-color: #8d0034;
+}
+
+/* Animations */
+.animation1 {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.animation2 {
+    animation: fadeIn 1.5s ease-in;
+}
+
+.animation3 {
+    animation: slideInFromRight 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .rooms-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-card {
+        max-width: 80%;
+        margin: 20px 0;
+    }
+}

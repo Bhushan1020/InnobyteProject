@@ -1,0 +1,105 @@
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.image-block img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 100px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    -webkit-animation: fadeIn 1s ease-out forwards;
+}
+
+.info-block {
+    flex: 1;
+    max-width: 500px;
+    height: 650px;
+    background-color: rgb(25, 83, 108);
+    border-radius: 100px;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.info-block h1 h2{
+    color:white;
+    padding: 50px;
+}
+
+.info-block p {
+    color:white;
+    padding:30px;
+}
+
+.book-now button {
+    background-color: #e21262;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding:30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+}
+
+.book-now button:hover {
+    background-color: #8d0034;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .book-now button{
+        margin-left: 0px;
+    }
+
+    .image-block img {
+        max-width: 100%;
+    }
+
+    .info-block {
+        max-width: 100%;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
