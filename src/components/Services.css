@@ -63,17 +63,6 @@
     -o-border-radius: 50px;
 }
 
-@media (max-width: 768px) {
-    .services-container {
-        flex-direction: column;
-    }
-
-    .services-list,
-    .image-block {
-        max-width: 100%;
-    }
-}
-
 
 .myblock1 {
     animation-name: slideInFromLeft;
@@ -153,3 +142,17 @@
         margin: 20px;
     }
 }
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-list,
+    .image-block {
+        max-width: 100%;
+    }
+    .myblock{
+        max-width: 100%;
+    }
+}
+

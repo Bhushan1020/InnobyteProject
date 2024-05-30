@@ -16,6 +16,7 @@ body, html {
 }
 
 .center-block {
+    color:white;
     width: 900px;
     padding: 20px 40px;
     border-radius: 10px;
@@ -30,16 +31,10 @@ body, html {
     -o-transform: translateY(60px);
 }
 
-.center-block h1 {
-    color: white;
-    margin: 0 0 10px;
-    font-size: 2.9em;
-}
-
 .center-block p {
     margin: 0;
-    font-size: 1.2em;
-    color: #666;
+    font-size: 3.7em;
+    color: #fff;
 }
 
 @keyframes fadeInUp {
@@ -54,5 +49,13 @@ body, html {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .center-block p {
+        margin: 0;
+        font-size: 1.2em;
+        color: #fff;
     }
 }
